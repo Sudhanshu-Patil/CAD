@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chatbot</title>
+    <link rel="stylesheet" href="static/styles.css">
+</head>
+<body>
+    <!-- Chat Icon -->
+    <div class="chat-icon" onclick="toggleChatPopup()">
+        <img src="static/chatbot.jpg" alt="Chatbot Icon">
+    </div>
+
+    <!-- Chat Popup -->
+    <div class="chat-popup" id="chat-popup">
+        <div class="chat-header">
+            <span>Chat with us</span>
+            <span class="close-button" onclick="toggleChatPopup()">&times;</span>
+        </div>
+        <div class="chat-body" id="chat-body">
+            <!-- Messages will be appended here -->
+        </div>
+        <div class="chat-footer">
+            <input type="text" id="user-input" placeholder="Type a message...">
+            <button id="send-button" onclick="sendMessage()">Send</button>
+        </div>
+    </div>
+
+    <script src="static/script.js"></script>
+</body>
+</html>
